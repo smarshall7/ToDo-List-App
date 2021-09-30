@@ -62,6 +62,8 @@ function addNewItem() {
 
   taskInput.value = "";
   taskInput.focus();
+
+  addButton.disabled = true;
 }
 
 function getItems() {

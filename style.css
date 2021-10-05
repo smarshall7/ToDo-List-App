@@ -1,6 +1,6 @@
 html {
   font-family: arial, helvetica, sans-serif;
-  background-color: #e3e9ff;
+  background-color: #e3e9ff ;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #af7eeb;
+  background-color: #648767;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
@@ -40,12 +40,12 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: #af7eeb;
+  background-color: #648767;
   cursor: pointer;
 }
 
 .new-button:hover {
-  background-color: #7e3ece;
+  background-color: #042a2b;
 }
 
 .new-button:disabled {
@@ -91,4 +91,5 @@ ul, li {
 
 .item-check:checked + .item-text {
   text-decoration: line-through;
+  text-decoration-thickness: 10%;
 }

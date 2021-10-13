@@ -42,7 +42,7 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
   color: white;
-  background-color: #af7eeb;
+  background-color: #648767;
   cursor: pointer;
 }
 
@@ -92,6 +92,7 @@ cursor: default;
 
 .item-check:checked + .item-text {
   text-decoration: line-through;
+  text-decoration-thickness: 10%;
 }
 
 ul, 

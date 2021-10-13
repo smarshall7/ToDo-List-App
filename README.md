@@ -1,3 +1,1 @@
-# The ToDo App
-
-Complete solution available here - https://github.com/snakemode/ToDoApp
+I'm currently updating the styling but check out the app here!

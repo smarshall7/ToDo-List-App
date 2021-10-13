@@ -1,62 +1,58 @@
 html {
-  font-family: arial, helvetica, sans-serif;
-  background-color: #e3e9ff ;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e3e9ff;
 }
+
 
 body {
   max-width: 360px;
-  margin: 1rem auto;
+  margin: 10px auto;
 }
 
 header {
-  background-color: #648767;
-  color: white;
-  padding: 10px;
   margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #af7eeb;
+  color: white;
 }
 
 h1 {
-  text-align: center;
   margin: 0;
+  font-size: 1.6em;
 }
 
 .new {
   display: flex;
-  margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
 .new-input {
   display: block;
   width: 100%;
-  padding: .5rem;
+  padding: 10px;
   border: 0;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .new-button {
   border: 0;
-  padding: 0 1rem;
-  font-size: 1.2rem;
+  padding: 0 20px;
+  font-size: 1.2em;
   font-weight: bold;
   color: white;
-  background-color: #648767;
+  background-color: #af7eeb;
   cursor: pointer;
 }
 
 .new-button:hover {
-  background-color: #042a2b;
+background-color: #7e3ece;
 }
 
 .new-button:disabled {
-  background-color: #ccc;
-  cursor: default;
-}
-
-ul, li {
-  margin: 0;
-  padding:0;
-  list-style: none;
+background-color: #ccc;
+cursor: default;
 }
 
 .item {
@@ -66,7 +62,7 @@ ul, li {
 }
 
 .item-check {
-  margin-right: 1rem;
+  margin-right: 20px;
 }
 
 .item-text {
@@ -74,22 +70,33 @@ ul, li {
 }
 
 .delete {
+  visibility: hidden;
   width: 20px;
   margin-left: auto;
   padding: 0;
   border: 0;
   background: url(https://cdn.glitch.com/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Fbin.png?v=1621165175709) no-repeat right;
   background-size: contain;
-  font-size: 0;
   color: transparent;
   cursor: pointer;
 }
 
 .delete:hover {
-   background-image: url(https://cdn.glitch.com/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Fbin2.png?v=1621165175742)
+  background-image: url(https://cdn.glitch.com/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Fbin2.png?v=1621165175742);
 }
+
+.item:hover .delete {
+  visibility: visible;
+}
+
 
 .item-check:checked + .item-text {
   text-decoration: line-through;
-  text-decoration-thickness: 10%;
+}
+
+ul, 
+li {
+margin: 0;
+padding: 0;
+list-style: none;
 }
